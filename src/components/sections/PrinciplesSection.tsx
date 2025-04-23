@@ -1,4 +1,3 @@
-
 import React from "react";
 
 interface PrincipleCardProps {
@@ -14,18 +13,16 @@ const PrincipleCard: React.FC<PrincipleCardProps> = ({
   description,
   index,
 }) => {
-  const bgColors = ["bg-[#FFF6F6]", "bg-[#FFF6F6]", "bg-white", "bg-white", "bg-[#FFF6F6]", "bg-[#FFF6F6]", "bg-white", "bg-white"];
-  
   return (
-    <article className={`shadow-[0px_6px_24px_0px_rgba(100,100,111,0.10)] ${bgColors[index]} w-full md:flex-1 shrink p-6 rounded-2xl`}>
-      <div className="flex items-center">
-        <img src={icon} className="aspect-[1] object-contain w-12" alt={title} />
+    <article className="flex flex-col bg-white rounded-2xl overflow-hidden">
+      <div className="bg-[#FFF6F6] p-6 flex items-start">
+        <img src={icon} className="w-8 h-8" alt={title} />
       </div>
-      <div className="w-full mt-4 md:mt-6">
-        <h3 className="text-[#ED1C24] text-xl leading-tight">
+      <div className="p-6">
+        <h3 className="text-[#ED1C24] text-lg font-medium mb-2">
           {title}
         </h3>
-        <p className="text-[#252D35] text-base leading-5 mt-3 md:mt-4 font-normal">
+        <p className="text-[#252D35] text-sm leading-[1.4]">
           {description}
         </p>
       </div>
@@ -86,18 +83,15 @@ export const PrinciplesSection = () => {
   ];
 
   return (
-    <section className="flex w-full flex-col items-stretch font-semibold mt-10 md:mt-20 py-6 md:py-10">
-      <h2 className="text-[#252D35] text-center text-2xl md:text-[32px] leading-tight">
+    <section className="w-full py-10">
+      <h2 className="text-[#252D35] text-2xl font-medium text-center mb-8">
         Principios KOF
       </h2>
-      <div className="w-full mt-6">
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4 md:gap-6">
-          {principles.map((principle, index) => (
-            <PrincipleCard key={index} {...principle} index={index} />
-          ))}
-        </div>
+      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+        {principles.map((principle, index) => (
+          <PrincipleCard key={index} {...principle} index={index} />
+        ))}
       </div>
     </section>
   );
 };
-
