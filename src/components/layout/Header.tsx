@@ -126,7 +126,10 @@ export const Header = () => {
       <div className="container mx-auto px-4 py-4">
         <div className="flex items-center justify-between">
           <img src="/path-to-logo" alt="FEMSA" className="h-8" />
-          {!isMobile && <Navigation />}
+          
+          {/* Make sure the Navigation component is visible on desktop */}
+          {!isMobile && <div className="block"><Navigation /></div>}
+          
           <div className="flex items-center gap-4">
             <select className="bg-transparent">
               <option>ES</option>
