@@ -1,12 +1,24 @@
-// Update this page (the content is just a fallback if you fail to update the page)
+import React from "react";
+import { Header } from "@/components/layout/Header";
+import { HeroSection } from "@/components/sections/HeroSection";
+import { PrinciplesSection } from "@/components/sections/PrinciplesSection";
+import { OrganizationSection } from "@/components/sections/OrganizationSection";
+import { DiversitySection } from "@/components/sections/DiversitySection";
+import { PillarsSection } from "@/components/sections/PillarsSection";
+import { CertificationsSection } from "@/components/sections/CertificationsSection";
 
 const Index = () => {
   return (
-    <div className="min-h-screen flex items-center justify-center bg-gray-100">
-      <div className="text-center">
-        <h1 className="text-4xl font-bold mb-4">Welcome to Your Blank App</h1>
-        <p className="text-xl text-gray-600">Start building your amazing project here!</p>
-      </div>
+    <div className="bg-white overflow-hidden pb-[116px] rounded-lg max-md:pb-[100px]">
+      <Header />
+      <main>
+        <HeroSection />
+        <PrinciplesSection />
+        <OrganizationSection />
+        <DiversitySection />
+        <PillarsSection />
+        <CertificationsSection />
+      </main>
     </div>
   );
 };
