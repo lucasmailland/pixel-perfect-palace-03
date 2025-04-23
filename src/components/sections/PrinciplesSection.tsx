@@ -81,7 +81,7 @@ export const PrinciplesSection = () => {
       icon: "https://cdn.builder.io/api/v1/image/assets/TEMP/0d94e8fdb3caf518a677cf4ff4966a51928edc95?placeholderIfAbsent=true",
       title: "Promover una mentalidad de crecimiento",
       description:
-        "Nos reta nos a pensar de forma diferente para lograr resultados excepcionales. Nos preguntamos "qué pasaría si..." en vez de "esto no funcionará porque..." y entregamos resultados.",
+        'Nos reta nos a pensar de forma diferente para lograr resultados excepcionales. Nos preguntamos "qué pasaría si..." en vez de "esto no funcionará porque..." y entregamos resultados.',
     },
   ];
 
