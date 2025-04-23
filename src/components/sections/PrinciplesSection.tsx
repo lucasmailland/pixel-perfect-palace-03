@@ -14,7 +14,7 @@ const PrincipleCard: React.FC<PrincipleCardProps> = ({
   description,
   index,
 }) => {
-  const bgColors = ["bg-[#fff6f6]", "bg-[#fff6f6]", "bg-white", "bg-white", "bg-[#fff6f6]", "bg-[#fff6f6]", "bg-white", "bg-white"];
+  const bgColors = ["bg-[#FFF6F6]", "bg-[#FFF6F6]", "bg-white", "bg-white", "bg-[#FFF6F6]", "bg-[#FFF6F6]", "bg-white", "bg-white"];
   
   return (
     <article className={`shadow-[0px_6px_24px_0px_rgba(100,100,111,0.10)] ${bgColors[index]} w-full md:flex-1 shrink p-6 rounded-2xl`}>
@@ -22,7 +22,7 @@ const PrincipleCard: React.FC<PrincipleCardProps> = ({
         <img src={icon} className="aspect-[1] object-contain w-12" alt={title} />
       </div>
       <div className="w-full mt-4 md:mt-6">
-        <h3 className="text-[rgba(237,28,36,1)] text-xl leading-tight">
+        <h3 className="text-[#ED1C24] text-xl leading-tight">
           {title}
         </h3>
         <p className="text-[#252D35] text-base leading-5 mt-3 md:mt-4 font-normal">
@@ -100,3 +100,4 @@ export const PrinciplesSection = () => {
     </section>
   );
 };
+
