@@ -1,7 +1,7 @@
 
 import React, { useState } from "react";
 import { useIsMobile } from "@/hooks/use-mobile";
-import { X } from "lucide-react";
+import { X, Menu } from "lucide-react";
 
 export const Header = () => {
   const isMobile = useIsMobile();
@@ -123,7 +123,6 @@ export const Header = () => {
 
   return (
     <header className="w-full bg-white border-b border-gray-100">
-      {!isMobile && <BrowserChrome />}
       <div className="container mx-auto px-4 py-4">
         <div className="flex items-center justify-between">
           <img src="/path-to-logo" alt="FEMSA" className="h-8" />
@@ -139,7 +138,7 @@ export const Header = () => {
             {isMobile && (
               <button onClick={() => setMobileMenuOpen(true)} className="ml-4">
                 <div className="w-10 h-10 bg-[#ED1C24] rounded-full flex items-center justify-center">
-                  <span className="text-white">☰</span>
+                  <Menu className="w-6 h-6 text-white" />
                 </div>
               </button>
             )}
