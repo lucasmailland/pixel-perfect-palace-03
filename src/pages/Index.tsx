@@ -1,3 +1,4 @@
+
 import React from "react";
 import { Header } from "@/components/layout/Header";
 import { HeroSection } from "@/components/sections/HeroSection";
@@ -9,9 +10,9 @@ import { CertificationsSection } from "@/components/sections/CertificationsSecti
 
 const Index = () => {
   return (
-    <div className="bg-white overflow-hidden pb-[116px] rounded-lg max-md:pb-[100px]">
+    <div className="bg-white overflow-hidden pb-[116px] max-md:pb-[50px]">
       <Header />
-      <main>
+      <main className="container mx-auto px-4 md:px-8">
         <HeroSection />
         <PrinciplesSection />
         <OrganizationSection />
